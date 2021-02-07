@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.android.darinternshiptask4.UserDataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/who_won_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            tools:text="User 1 won" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/action_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="33dp"
+            android:text="continue" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/cell_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="60sp" />
+    </LinearLayout>
+</LinearLayout>

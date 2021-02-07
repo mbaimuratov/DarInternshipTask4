@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.android.darinternshiptask4.fragments.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_userDataFragment"
+            app:destination="@id/userDataFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_recordsFragment"
+            app:destination="@id/recordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDataFragment"
+        android:name="com.example.android.darinternshiptask4.UserDataFragment"
+        android:label="fragment_user_data"
+        tools:layout="@layout/fragment_user_data" >
+        <action
+            android:id="@+id/action_userDataFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.android.darinternshiptask4.fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <argument
+            android:name="firstUserNameString"
+            app:argType="string"
+            android:defaultValue='""' />
+        <argument
+            android:name="secondUserNameString"
+            app:argType="string"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_gameFragment_to_recordsFragment"
+            app:destination="@id/recordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recordsFragment"
+        android:name="com.example.android.darinternshiptask4.fragments.RecordsFragment"
+        android:label="fragment_records"
+        tools:layout="@layout/fragment_records" >
+        <action
+            android:id="@+id/action_recordsFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+</navigation>
